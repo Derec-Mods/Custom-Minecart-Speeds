@@ -1,8 +1,17 @@
-name: AntiWitherGriefing
-version: '1.3.0.0'
-main: io.github.derexxd.antiwithergriefing.AntiWitherGriefing
+name: CustomMinecartSpeeds
+version: '${version}'
+main: io.github.derexxd.customminecartspeeds.CustomMinecartSpeeds
 api-version: '1.21'
-prefix: DerexXD
+prefix: CustomMinecartSpeeds
 authors: [ DerexXD ]
-description: Minimal and lag-efficient wither grief and portal prevention
+description: Per-minecart speed customization and limits for Minecraft 1.21.2 and above
 website: https://www.derekchen.dev/
+commands:
+  customminecartspeeds:
+    description: Reload CustomMinecartSpeeds configuration
+    aliases: [ cms ]
+    permission: customminecartspeeds.reload
+permissions:
+  customminecartspeeds.reload:
+    description: Allows reloading the configuration
+    default: op
