@@ -1,0 +1,8 @@
+name: AntiWitherGriefing
+version: '1.3.0.0'
+main: io.github.derexxd.antiwithergriefing.AntiWitherGriefing
+api-version: '1.21'
+prefix: DerexXD
+authors: [ DerexXD ]
+description: Minimal and lag-efficient wither grief and portal prevention
+website: https://www.derekchen.dev/
