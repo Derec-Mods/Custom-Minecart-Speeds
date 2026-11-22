@@ -1,4 +1,4 @@
-name: Custom-Minecart-Speeds
+name: Custom Minecart Speeds
 version: '${version}'
 main: io.github.derexxd.customminecartspeeds.CustomMinecartSpeeds
 api-version: '1.21'
