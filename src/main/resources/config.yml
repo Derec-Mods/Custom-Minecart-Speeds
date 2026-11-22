@@ -1,3 +1,7 @@
-prevent-block-break: true
-prevent-explosions: true
-prevent-portals: true
+minecart: gamerule
+chest-minecart: gamerule
+hopper-minecart: gamerule
+tnt-minecart: gamerule
+furnace-minecart: gamerule
+spawner-minecart: gamerule
+command-block-minecart: gamerule

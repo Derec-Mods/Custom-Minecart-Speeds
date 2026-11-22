@@ -1,15 +1,15 @@
-name: CustomMinecartSpeeds
+name: Custom-Minecart-Speeds
 version: '${version}'
 main: io.github.derexxd.customminecartspeeds.CustomMinecartSpeeds
 api-version: '1.21'
-prefix: CustomMinecartSpeeds
+prefix: Custom-Minecart-Speeds
 authors: [ DerexXD ]
 description: Per-minecart speed customization and limits for Minecraft 1.21.2 and above
 website: https://www.derekchen.dev/
 commands:
-  customminecartspeeds:
-    description: Reload CustomMinecartSpeeds configuration
-    aliases: [ cms ]
+  custom-minecart-speeds:
+    description: Reload Custom-Minecart-Speeds configuration
+    aliases: [ cms, customminecartspeeds ]
     permission: customminecartspeeds.reload
 permissions:
   customminecartspeeds.reload:
