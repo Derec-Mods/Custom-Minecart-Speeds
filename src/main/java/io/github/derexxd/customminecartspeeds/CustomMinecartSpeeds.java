@@ -3,11 +3,13 @@ package io.github.derexxd.customminecartspeeds;
 import org.bukkit.World;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Minecart;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.vehicle.VehicleCreateEvent;
+import org.bukkit.event.world.EntitiesLoadEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Collections;
@@ -77,6 +79,18 @@ public class CustomMinecartSpeeds extends JavaPlugin implements Listener {
             Double limit = speedLimits.get(minecart.getType());
             if (limit != null) {
                 minecart.setMaxSpeed(limit);
+            }
+        }
+    }
+
+    @EventHandler(ignoreCancelled = true)
+    public void onEntitiesLoad(EntitiesLoadEvent event) {
+        for (Entity entity : event.getEntities()) {
+            if (entity instanceof Minecart minecart) {
+                Double limit = speedLimits.get(minecart.getType());
+                if (limit != null) {
+                    minecart.setMaxSpeed(limit);
+                }
             }
         }
     }
