@@ -1,10 +1,12 @@
 # Custom Minecart Speeds
-
+[![Support me on Ko-fi](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/donate/kofi-singular-alt_vector.svg)](https://ko-fi.com/derexxd) 
 > If this project helped you, please consider leaving some stars [on the Github](https://github.com/Derec-Mods)!
 
 Plugin for admin management meant to complement the Minecart Improvements experimental feature, letting servers configure speed individually for each Minecart type. You must have it enabled. Yes, you can enable minecart improvements on existing worlds, just use a level.dat editor
 
 The new `minecartMaxSpeed` gamerule in Minecraft 1.21.2+ is awesome for high-speed transit, but cranking it up globally breaks hopper minecart sorting systems, item collection lines, and technical redstone contraptions. This plugin solves that by letting you keep fast rideable minecarts for travel while locking hopper carts, chest carts, or other utility carts to vanilla speed or any custom cap you choose.
+
+<video controls width="100%" src="https://raw.githubusercontent.com/Derec-Mods/Custom-Minecart-Speeds/main/assets/demo.mp4"></video>
 
 ## Current Features
 
